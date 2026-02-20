@@ -89,7 +89,7 @@ lib/
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/vmaps.git
+git clone https://github.com/vaxpapps/vmaps.git
 cd vmaps
 
 # Get dependencies
@@ -135,11 +135,7 @@ The release binary will be at: `build/linux/x64/release/bundle/vmaps`
 
 ---
 
-## 📜 License
 
-This project is open-source and available under the [MIT License](LICENSE).
-
----
 
 ## 🙏 Credits
 
@@ -150,4 +146,3 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ---
 
-<p align="center">Made with ❤️ using Flutter</p>
