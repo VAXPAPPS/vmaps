@@ -63,11 +63,11 @@ class LayerSwitcher extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
                     decoration: BoxDecoration(
                       color: isSelected
-                          ? MapStyles.routeColor.withOpacity(0.2)
+                          ? MapStyles.routeColor.withValues(alpha: 0.2)
                           : Colors.transparent,
                       borderRadius: BorderRadius.circular(10),
                       border: isSelected
-                          ? Border.all(color: MapStyles.routeColor.withOpacity(0.4))
+                          ? Border.all(color: MapStyles.routeColor.withValues(alpha: 0.4))
                           : null,
                     ),
                     child: Row(

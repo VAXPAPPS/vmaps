@@ -87,7 +87,7 @@ class _VaxpMarkerWidgetState extends State<VaxpMarkerWidget>
                 border: Border.all(color: Colors.white, width: 2.5),
                 boxShadow: [
                   BoxShadow(
-                    color: widget.color.withOpacity(0.5),
+                    color: widget.color.withValues(alpha: 0.5),
                     blurRadius: 12,
                     spreadRadius: 2,
                   ),

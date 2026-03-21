@@ -68,11 +68,11 @@ class _SidebarState extends State<Sidebar> {
             margin: const EdgeInsets.symmetric(vertical: 4),
             decoration: BoxDecoration(
               color: isSelected
-                  ? Colors.white.withOpacity(0.15)
+                  ? Colors.white.withValues(alpha: 0.15)
                   : Colors.transparent,
               borderRadius: BorderRadius.circular(12),
               border: isSelected
-                  ? Border.all(color: MapStyles.routeColor.withOpacity(0.4))
+                  ? Border.all(color: MapStyles.routeColor.withValues(alpha: 0.4))
                   : null,
             ),
             child: Icon(

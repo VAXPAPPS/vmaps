@@ -34,7 +34,7 @@ class RouteEntity extends Equatable {
     final hours = durationMinutes ~/ 60;
     final minutes = (durationMinutes % 60).round();
     if (hours > 0) {
-      return '${hours} س ${minutes} د';
+      return '$hours س $minutes د';
     }
     return '$minutes د';
   }

@@ -84,7 +84,7 @@ class RoutePanel extends StatelessWidget {
                           icon: const Icon(Icons.directions, size: 18),
                           label: const Text('حساب المسار'),
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: MapStyles.routeColor.withOpacity(0.8),
+                            backgroundColor: MapStyles.routeColor.withValues(alpha: 0.8),
                             foregroundColor: Colors.white,
                             padding: const EdgeInsets.symmetric(vertical: 12),
                             shape: RoundedRectangleBorder(
@@ -178,7 +178,7 @@ class RoutePanel extends StatelessWidget {
           width: 28,
           height: 28,
           decoration: BoxDecoration(
-            color: color.withOpacity(0.2),
+            color: color.withValues(alpha: 0.2),
             shape: BoxShape.circle,
             border: Border.all(color: color, width: 2),
           ),
@@ -206,7 +206,7 @@ class RoutePanel extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.08),
+        color: Colors.white.withValues(alpha: 0.08),
         borderRadius: BorderRadius.circular(12),
       ),
       child: Row(

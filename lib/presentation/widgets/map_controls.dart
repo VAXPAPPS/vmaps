@@ -83,7 +83,7 @@ class _ControlButtonState extends State<_ControlButton> {
           height: 42,
           decoration: BoxDecoration(
             color: _isHovered
-                ? Colors.white.withOpacity(0.15)
+                ? Colors.white.withValues(alpha: 0.15)
                 : Colors.transparent,
             borderRadius: widget.borderRadius,
           ),

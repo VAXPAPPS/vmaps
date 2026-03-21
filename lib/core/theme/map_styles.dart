@@ -27,7 +27,7 @@ class MapStyles {
   /// ظل العناصر الزجاجية
   static List<BoxShadow> glassShadow = [
     BoxShadow(
-      color: Colors.black.withOpacity(0.3),
+      color: Colors.black.withValues(alpha: 0.3),
       blurRadius: 20,
       spreadRadius: 2,
     ),
@@ -39,7 +39,7 @@ class MapStyles {
     BorderRadius? borderRadius,
   }) {
     return BoxDecoration(
-      color: Colors.white.withOpacity(opacity),
+      color: Colors.white.withValues(alpha: opacity),
       borderRadius: borderRadius ?? BorderRadius.circular(16),
       border: Border.all(color: panelBorder),
       boxShadow: glassShadow,

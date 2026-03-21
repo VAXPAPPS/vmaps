@@ -129,7 +129,7 @@ class FavoritesPanel extends StatelessWidget {
         alignment: Alignment.centerLeft,
         padding: const EdgeInsets.only(left: 20),
         decoration: BoxDecoration(
-          color: Colors.redAccent.withOpacity(0.2),
+          color: Colors.redAccent.withValues(alpha: 0.2),
           borderRadius: BorderRadius.circular(10),
         ),
         child: const Icon(Icons.delete, color: Colors.redAccent, size: 20),
@@ -154,7 +154,7 @@ class FavoritesPanel extends StatelessWidget {
                   width: 36,
                   height: 36,
                   decoration: BoxDecoration(
-                    color: Colors.redAccent.withOpacity(0.15),
+                    color: Colors.redAccent.withValues(alpha: 0.15),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: const Icon(Icons.favorite, color: Colors.redAccent, size: 18),
