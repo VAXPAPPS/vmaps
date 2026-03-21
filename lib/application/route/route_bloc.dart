@@ -48,7 +48,7 @@ class RouteBloc extends Bloc<RouteEvent, RouteState> {
         );
         emit(RouteLoaded(route));
       } catch (e) {
-        emit(RouteError('فشل حساب المسار: ${e.toString()}'));
+        emit(RouteError('Failed to calculate route: ${e.toString()}'));
       }
     }
   }

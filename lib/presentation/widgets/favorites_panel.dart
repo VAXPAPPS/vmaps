@@ -35,7 +35,7 @@ class FavoritesPanel extends StatelessWidget {
                   const Icon(Icons.favorite, color: Colors.redAccent, size: 20),
                   const SizedBox(width: 8),
                   const Text(
-                    'الأماكن المفضلة',
+                    'Favorites',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16,
@@ -78,12 +78,12 @@ class FavoritesPanel extends StatelessWidget {
                               Icon(Icons.favorite_border, color: Colors.white24, size: 48),
                               SizedBox(height: 12),
                               Text(
-                                'لا توجد أماكن محفوظة',
+                                'No saved places',
                                 style: TextStyle(color: Colors.white38, fontSize: 14),
                               ),
                               SizedBox(height: 4),
                               Text(
-                                'انقر على الخريطة واحفظ أماكنك المفضلة',
+                                'Tap the map and save your favorite places',
                                 style: TextStyle(color: Colors.white24, fontSize: 12),
                               ),
                             ],

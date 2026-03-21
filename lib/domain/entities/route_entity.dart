@@ -24,9 +24,9 @@ class RouteEntity extends Equatable {
   /// المسافة منسقة كنص
   String get formattedDistance {
     if (distanceKm < 1) {
-      return '${(distanceKm * 1000).round()} م';
+      return '${(distanceKm * 1000).round()} m';
     }
-    return '${distanceKm.toStringAsFixed(1)} كم';
+    return '${distanceKm.toStringAsFixed(1)} km';
   }
 
   /// الزمن منسق كنص
@@ -34,9 +34,9 @@ class RouteEntity extends Equatable {
     final hours = durationMinutes ~/ 60;
     final minutes = (durationMinutes % 60).round();
     if (hours > 0) {
-      return '$hours س $minutes د';
+      return '$hours h $minutes min';
     }
-    return '$minutes د';
+    return '$minutes min';
   }
 
   @override

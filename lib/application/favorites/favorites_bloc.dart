@@ -21,7 +21,7 @@ class FavoritesBloc extends Bloc<FavoritesEvent, FavoritesState> {
       final favorites = await _repository.getFavorites();
       emit(FavoritesLoaded(favorites));
     } catch (e) {
-      emit(FavoritesError('فشل تحميل المفضلة: ${e.toString()}'));
+      emit(FavoritesError('Failed to load favorites: ${e.toString()}'));
     }
   }
 
@@ -32,7 +32,7 @@ class FavoritesBloc extends Bloc<FavoritesEvent, FavoritesState> {
       final favorites = await _repository.getFavorites();
       emit(FavoritesLoaded(favorites));
     } catch (e) {
-      emit(FavoritesError('فشل إضافة المفضلة: ${e.toString()}'));
+      emit(FavoritesError('Failed to add favorite: ${e.toString()}'));
     }
   }
 
@@ -42,7 +42,7 @@ class FavoritesBloc extends Bloc<FavoritesEvent, FavoritesState> {
       final favorites = await _repository.getFavorites();
       emit(FavoritesLoaded(favorites));
     } catch (e) {
-      emit(FavoritesError('فشل حذف المفضلة: ${e.toString()}'));
+      emit(FavoritesError('Failed to remove favorite: ${e.toString()}'));
     }
   }
 }

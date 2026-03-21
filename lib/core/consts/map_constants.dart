@@ -5,27 +5,27 @@ class MapConstants {
   /// طبقات الخريطة المتاحة
   static const List<MapLayerConfig> layers = [
     MapLayerConfig(
-      name: 'عادية',
+      name: 'Standard',
       urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
       attribution: '© OpenStreetMap contributors',
       icon: 'map',
     ),
     MapLayerConfig(
-      name: 'داكنة',
+      name: 'Dark',
       urlTemplate: 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
       attribution: '© CartoDB',
       subdomains: ['a', 'b', 'c', 'd'],
       icon: 'dark_mode',
     ),
     MapLayerConfig(
-      name: 'طبوغرافية',
+      name: 'Topographic',
       urlTemplate: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
       attribution: '© OpenTopoMap',
       subdomains: ['a', 'b', 'c'],
       icon: 'terrain',
     ),
     MapLayerConfig(
-      name: 'إنسانية',
+      name: 'Humanitarian',
       urlTemplate: 'https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png',
       attribution: '© Humanitarian OSM',
       subdomains: ['a', 'b'],

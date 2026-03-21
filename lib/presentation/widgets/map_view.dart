@@ -153,11 +153,11 @@ class MapViewState extends State<MapView> {
       final routeBloc = context.read<RouteBloc>();
       final routeState = routeBloc.state;
       if (routeState is RouteInitial || routeState is RouteError) {
-        routeBloc.add(SetOriginEvent(point, name: 'نقطة البداية'));
+        routeBloc.add(SetOriginEvent(point, name: 'Start Point'));
       } else if (routeState is RoutePointsSet &&
           routeState.origin != null &&
           routeState.destination == null) {
-        routeBloc.add(SetDestinationEvent(point, name: 'الوجهة'));
+        routeBloc.add(SetDestinationEvent(point, name: 'Destination'));
       }
     } else {
       // الوضع العادي: Reverse Geocoding

@@ -36,12 +36,12 @@ class _SidebarState extends State<Sidebar> {
           child: Column(
             children: [
               const SizedBox(height: 52), // مساحة للـ appbar
-              _buildNavItem(0, Icons.map, 'الخريطة'),
-              _buildNavItem(1, Icons.search, 'بحث'),
-              _buildNavItem(2, Icons.route, 'مسارات'),
-              _buildNavItem(3, Icons.favorite, 'مفضلة'),
+              _buildNavItem(0, Icons.map, 'Map'),
+              _buildNavItem(1, Icons.search, 'Search'),
+              _buildNavItem(2, Icons.route, 'Routes'),
+              _buildNavItem(3, Icons.favorite, 'Favorites'),
               const Spacer(),
-              _buildNavItem(4, Icons.settings, 'إعدادات'),
+              _buildNavItem(4, Icons.settings, 'Settings'),
               const SizedBox(height: 12),
             ],
           ),

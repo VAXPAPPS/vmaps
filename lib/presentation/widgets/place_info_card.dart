@@ -137,7 +137,7 @@ class PlaceInfoCard extends StatelessWidget {
                   Expanded(
                     child: _buildActionButton(
                       icon: isFavorite ? Icons.favorite : Icons.favorite_border,
-                      label: isFavorite ? 'محفوظ' : 'حفظ',
+                      label: isFavorite ? 'Saved' : 'Save',
                       color: isFavorite ? Colors.redAccent : Colors.white70,
                       onTap: onFavorite,
                     ),
@@ -146,7 +146,7 @@ class PlaceInfoCard extends StatelessWidget {
                   Expanded(
                     child: _buildActionButton(
                       icon: Icons.directions,
-                      label: 'الاتجاهات',
+                      label: 'Directions',
                       color: MapStyles.routeColor,
                       onTap: onRoute,
                     ),

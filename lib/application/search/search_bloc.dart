@@ -40,7 +40,7 @@ class SearchBloc extends Bloc<SearchEvent, SearchState> {
       final results = await _repository.searchPlaces(event.query);
       emit(SearchLoaded(results: results, query: event.query));
     } catch (e) {
-      emit(SearchError('فشل البحث: ${e.toString()}'));
+      emit(SearchError('Search failed: ${e.toString()}'));
     }
   }
 

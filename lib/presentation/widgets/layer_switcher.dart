@@ -35,7 +35,7 @@ class LayerSwitcher extends StatelessWidget {
                   const Icon(Icons.layers, color: Colors.white70, size: 18),
                   const SizedBox(width: 8),
                   const Text(
-                    'طبقات الخريطة',
+                    'Map Layers',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 13,

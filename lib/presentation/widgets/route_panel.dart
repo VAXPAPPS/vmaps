@@ -33,7 +33,7 @@ class RoutePanel extends StatelessWidget {
                       const Icon(Icons.route, color: Colors.white, size: 20),
                       const SizedBox(width: 8),
                       const Text(
-                        'تخطيط المسار',
+                        'Route Planner',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 16,
@@ -57,7 +57,7 @@ class RoutePanel extends StatelessWidget {
                       color: MapStyles.originMarkerColor,
                       text: state is RoutePointsSet && (state).originName != null
                           ? (state).originName!
-                          : 'انقر على الخريطة لتحديد البداية',
+                          : 'Tap the map to set the start point',
                       isSet: state is RoutePointsSet && (state).origin != null,
                     ),
                     const SizedBox(height: 8),
@@ -66,7 +66,7 @@ class RoutePanel extends StatelessWidget {
                       color: MapStyles.destinationMarkerColor,
                       text: state is RoutePointsSet && (state).destinationName != null
                           ? (state).destinationName!
-                          : 'انقر مرة أخرى لتحديد الوجهة',
+                          : 'Tap again to set the destination',
                       isSet: state is RoutePointsSet && (state).destination != null,
                     ),
                     const SizedBox(height: 16),
@@ -82,7 +82,7 @@ class RoutePanel extends StatelessWidget {
                             context.read<RouteBloc>().add(CalculateRouteEvent());
                           },
                           icon: const Icon(Icons.directions, size: 18),
-                          label: const Text('حساب المسار'),
+                          label: const Text('Calculate Route'),
                           style: ElevatedButton.styleFrom(
                             backgroundColor: MapStyles.routeColor.withValues(alpha: 0.8),
                             foregroundColor: Colors.white,
@@ -111,7 +111,7 @@ class RoutePanel extends StatelessWidget {
                           ),
                           SizedBox(height: 12),
                           Text(
-                            'جاري حساب المسار...',
+                            'Calculating route...',
                             style: TextStyle(color: Colors.white54, fontSize: 13),
                           ),
                         ],
@@ -130,7 +130,7 @@ class RoutePanel extends StatelessWidget {
                           context.read<RouteBloc>().add(ClearRouteEvent());
                         },
                         icon: const Icon(Icons.clear, size: 16),
-                        label: const Text('مسار جديد'),
+                        label: const Text('New Route'),
                         style: OutlinedButton.styleFrom(
                           foregroundColor: Colors.white70,
                           side: const BorderSide(color: Colors.white24),
@@ -154,7 +154,7 @@ class RoutePanel extends StatelessWidget {
                       onPressed: () {
                         context.read<RouteBloc>().add(ClearRouteEvent());
                       },
-                      child: const Text('حاول مجدداً', style: TextStyle(color: Colors.white54)),
+                      child: const Text('Try Again', style: TextStyle(color: Colors.white54)),
                     ),
                   ],
                 ],
@@ -214,13 +214,13 @@ class RoutePanel extends StatelessWidget {
         children: [
           _buildInfoItem(
             icon: Icons.straighten,
-            label: 'المسافة',
+            label: 'Distance',
             value: state.route.formattedDistance,
           ),
           Container(width: 1, height: 40, color: Colors.white12),
           _buildInfoItem(
             icon: Icons.timer,
-            label: 'الزمن',
+            label: 'Duration',
             value: state.route.formattedDuration,
           ),
         ],

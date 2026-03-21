@@ -33,7 +33,7 @@ class SettingsPanel extends StatelessWidget {
                   const Icon(Icons.settings, color: Colors.white, size: 20),
                   const SizedBox(width: 8),
                   const Text(
-                    'الإعدادات',
+                    'Settings',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16,
@@ -57,7 +57,7 @@ class SettingsPanel extends StatelessWidget {
 
               // الانتقال السريع لمواقع محددة
               const Text(
-                'الانتقال السريع',
+                'Quick Jump',
                 style: TextStyle(
                   color: Colors.white70,
                   fontSize: 13,
@@ -68,8 +68,8 @@ class SettingsPanel extends StatelessWidget {
 
               _QuickLocationButton(
                 icon: Icons.location_city,
-                label: 'الرياض',
-                subtitle: 'المملكة العربية السعودية',
+                label: 'Riyadh',
+                subtitle: 'Saudi Arabia',
                 onTap: () {
                   context.read<MapBloc>().add(
                     const MoveCameraEvent(LatLng(24.7136, 46.6753), zoom: 11.0),
@@ -78,8 +78,8 @@ class SettingsPanel extends StatelessWidget {
               ),
               _QuickLocationButton(
                 icon: Icons.location_city,
-                label: 'مكة المكرمة',
-                subtitle: 'المملكة العربية السعودية',
+                label: 'Makkah',
+                subtitle: 'Saudi Arabia',
                 onTap: () {
                   context.read<MapBloc>().add(
                     const MoveCameraEvent(LatLng(21.4225, 39.8262), zoom: 12.0),
@@ -88,8 +88,8 @@ class SettingsPanel extends StatelessWidget {
               ),
               _QuickLocationButton(
                 icon: Icons.location_city,
-                label: 'دبي',
-                subtitle: 'الإمارات العربية المتحدة',
+                label: 'Dubai',
+                subtitle: 'United Arab Emirates',
                 onTap: () {
                   context.read<MapBloc>().add(
                     const MoveCameraEvent(LatLng(25.2048, 55.2708), zoom: 11.0),
@@ -98,8 +98,8 @@ class SettingsPanel extends StatelessWidget {
               ),
               _QuickLocationButton(
                 icon: Icons.location_city,
-                label: 'القاهرة',
-                subtitle: 'مصر',
+                label: 'Cairo',
+                subtitle: 'Egypt',
                 onTap: () {
                   context.read<MapBloc>().add(
                     const MoveCameraEvent(LatLng(30.0444, 31.2357), zoom: 11.0),
@@ -125,7 +125,7 @@ class SettingsPanel extends StatelessWidget {
                     );
                   },
                   icon: const Icon(Icons.restart_alt, size: 16),
-                  label: const Text('إعادة تعيين الخريطة'),
+                  label: const Text('Reset Map'),
                   style: OutlinedButton.styleFrom(
                     foregroundColor: Colors.white70,
                     side: const BorderSide(color: Colors.white24),
@@ -160,12 +160,12 @@ class SettingsPanel extends StatelessWidget {
                     ),
                     SizedBox(height: 4),
                     Text(
-                      'مبني بتقنية Flutter + OpenStreetMap',
+                      'Built with Flutter + OpenStreetMap',
                       style: TextStyle(color: Colors.white30, fontSize: 11),
                     ),
                     SizedBox(height: 2),
                     Text(
-                      'خرائط OpenStreetMap • بحث Nominatim • مسارات OSRM',
+                      'OpenStreetMap tiles • Nominatim search • OSRM routing',
                       style: TextStyle(color: Colors.white24, fontSize: 10),
                     ),
                   ],

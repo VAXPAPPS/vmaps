@@ -75,7 +75,7 @@ class _SearchPanelState extends State<SearchPanel> {
               focusNode: _focusNode,
               style: const TextStyle(color: Colors.white, fontSize: 14),
               decoration: const InputDecoration(
-                hintText: 'ابحث عن مكان...',
+                hintText: 'Search for a place...',
                 hintStyle: TextStyle(color: Colors.white38),
                 border: InputBorder.none,
                 enabledBorder: InputBorder.none,
@@ -130,7 +130,7 @@ class _SearchPanelState extends State<SearchPanel> {
             return const Padding(
               padding: EdgeInsets.all(20),
               child: Text(
-                'لا توجد نتائج',
+                'No results found',
                 style: TextStyle(color: Colors.white38),
               ),
             );
