@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=vmaps
+Comment=Flutter Application - vmaps
+Exec=/usr/bin/vmaps
+Icon=/usr/share/icons/hicolor/256x256/apps/vmaps.png
+Terminal=false
+Categories=Utility;Development;
